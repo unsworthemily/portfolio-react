@@ -1,48 +1,57 @@
 import "./ProjectCard.css";
 
-function ProjectCard({ name, screenshot, githubRepo, techUsed, shortWriteUp, whatItDoes, whatILearned, role, challengesSolved }) {
+export default function ProjectCard({
+  name,
+  screenshot,
+  githubRepo,
+  techUsed,
+  shortWriteUp,
+  whatItDoes,
+  whatILearned,
+  role,
+  challengesSolved,
+}) {
   return (
-    <article className="card">
-      <img src={screenshot} alt={name} />
+    <article className="card project">
+      <div className="project__media">
+        <img src={screenshot} alt={`Screenshot of ${name}`} />
+      </div>
 
-      <div className="cardBody">
-        <h2 className="cardTitle">{name}</h2>
-        <p className="short">{shortWriteUp}</p>
+      <div className="project__body">
+        <div className="project__top">
+          <h3 className="project__title">{name}</h3>
+          <a className="btn btn--ghost" href={githubRepo} target="_blank" rel="noreferrer">
+            GitHub Repo →
+          </a>
+        </div>
 
-        <div className="tags">
+        <p className="muted">{shortWriteUp}</p>
+
+        <div className="chips">
           {techUsed.map((t) => (
-            <span className="tag" key={t}>{t}</span>
+            <span className="chip" key={t}>{t}</span>
           ))}
         </div>
 
-        <div className="section">
-          <h4>What it does</h4>
-          <p>{whatItDoes}</p>
-        </div>
-
-        <div className="section">
-          <h4>What I learned</h4>
-          <p>{whatILearned}</p>
-        </div>
-
-        <div className="section">
-          <h4>Role</h4>
-          <p>{role}</p>
-        </div>
-
-        <div className="section">
-          <h4>Challenges</h4>
-          <p>{challengesSolved}</p>
-        </div>
-
-        <div className="actions">
-          <a className="btn" href={githubRepo} target="_blank" rel="noreferrer">
-            GitHub Repo
-          </a>
+        <div className="project__grid">
+          <div>
+            <h4>What the project does</h4>
+            <p>{whatItDoes}</p>
+          </div>
+          <div>
+            <h4>What you learned</h4>
+            <p>{whatILearned}</p>
+          </div>
+          <div>
+            <h4>Your role</h4>
+            <p>{role}</p>
+          </div>
+          <div>
+            <h4>Challenges you solved</h4>
+            <p>{challengesSolved}</p>
+          </div>
         </div>
       </div>
     </article>
   );
 }
-
-export default ProjectCard;

@@ -1,33 +1,23 @@
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
 
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ProjectCard from "./components/ProjectCard";
-import Footer from "./components/Footer";
-import { projects } from "./data/projects";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
 
-      <main className="container" id="projects">
-        {projects.map((p) => (
-          <ProjectCard
-            key={p.name}
-            name={p.name}
-            screenshot={p.screenshot}
-            githubRepo={p.githubRepo}
-            techUsed={p.techUsed}
-            shortWriteUp={p.shortWriteUp}
-            whatItDoes={p.whatItDoes}
-            whatILearned={p.whatILearned}
-            role={p.role}
-            challengesSolved={p.challengesSolved}
-          />
-        ))}
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
 
       <Footer />
     </>

@@ -7,7 +7,7 @@
   max-width: 760px;
 }
 
-/* Lilla texten över rubriken */
+/* texten över rubriken */
 .kicker {
   margin: 0 0 12px;
   font-size: 13px;
@@ -16,7 +16,7 @@
   color: rgba(16, 17, 20, 0.55);
 }
 
-/* Stor rubrik */
+/* Stora rubriker */
 .hero__title {
   margin: 0 0 16px;
   font-size: 48px;
@@ -36,38 +36,6 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-}
-
-/* Primär knapp */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 16px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 14px;
-  text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-  border: 1px solid transparent;
-  background: #111;
-  color: #fff;
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
-}
-
-/* Ghost-knapp (matchar ProjectCard/Navbar) */
-.btn--ghost {
-  background: #fff;
-  color: #111;
-  border: 1px solid rgba(15, 23, 42, 0.12);
-}
-
-.btn--ghost:hover {
-  background: rgba(15, 23, 42, 0.04);
 }
 
 /* Responsiv rubrik */

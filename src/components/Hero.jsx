@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./Hero.css";
+
 export default function Hero() {
   return (
     <section className="hero" id="top">
@@ -10,7 +12,7 @@ export default function Hero() {
         </p>
 
         <div className="hero__actions">
-          <a className="btn" href="#projects">View projects</a>
+          <Link className="btn" to="/portfolio">View projects</Link>
           <a className="btn btn--ghost" href="#contact">Contact</a>
         </div>
       </div>

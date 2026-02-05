@@ -13,8 +13,8 @@
   flex-wrap: wrap;
 }
 
-/* Dämpad text (återanvänder .muted från cards) */
-.muted {
+/* Dämpad text (återanvänder .footermuted från cards) */
+.footer__muted {
   color: rgba(16, 17, 20, 0.6);
   margin: 0;
   font-size: 14px;

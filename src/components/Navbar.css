@@ -14,7 +14,7 @@
   height: 68px;
 }
 
-/* Loggan / namnet */
+/* Brand / logo */
 .nav__brand {
   font-weight: 700;
   font-size: 18px;
@@ -22,7 +22,7 @@
   letter-spacing: -0.3px;
 }
 
-/* Länkar */
+/* Links */
 .nav__links {
   display: flex;
   gap: 22px;
@@ -37,7 +37,7 @@
   transition: color 0.2s ease;
 }
 
-/* subtil underline-hover */
+/* Underline hover */
 .nav__links a::after {
   content: "";
   position: absolute;

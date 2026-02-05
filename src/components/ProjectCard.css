@@ -1,4 +1,6 @@
 .card.project {
+  width: 100%;
+  max-width: 100%;
   background: #fff;
   border-radius: 18px;
   overflow: hidden;
@@ -6,6 +8,12 @@
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
   display: grid;
   grid-template-columns: 1fr;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card.project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
 }
 
 /* media */
@@ -77,31 +85,7 @@
   color: rgba(16, 17, 20, 0.9);
 }
 
-/* buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-  user-select: none;
-}
-
-.btn--ghost {
-  background: #fff;
-  border: 1px solid rgba(15, 23, 42, 0.10);
-}
-
-.btn--ghost:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.08);
-}
-
-/* desktop layout: bild vänster, text höger + 2 kolumner i grid */
+/* desktop layout */
 @media (min-width: 900px) {
   .card.project {
     grid-template-columns: 1.05fr 1.45fr;
@@ -115,12 +99,4 @@
   .project__grid {
     grid-template-columns: 1fr 1fr;
   }
-}
-.card.project {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.card.project:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
 }
