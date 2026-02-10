@@ -12,6 +12,7 @@ export default function Navbar({ query, setQuery }) {
         <nav className="nav__links">
           <Link to="/portfolio">Projects</Link>
           <Link to="/about">About</Link>
+          <Link to="/game">Game</Link>
           <a href="#contact">Contact</a>
         </nav>
 
