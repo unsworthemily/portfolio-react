@@ -10,9 +10,16 @@ export default function ProjectCard({
   whatILearned,
   role,
   challengesSolved,
+  onSelect,
 }) {
   return (
-    <article className="card project">
+    <article
+      className="card project"
+      onClick={() => onSelect?.()}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && onSelect?.()}
+    >
       <div className="project__media">
         <img src={screenshot} alt={`Screenshot of ${name}`} />
       </div>
@@ -20,7 +27,13 @@ export default function ProjectCard({
       <div className="project__body">
         <div className="project__top">
           <h3 className="project__title">{name}</h3>
-          <a className="btn btn--ghost" href={githubRepo} target="_blank" rel="noreferrer">
+          <a
+            className="btn btn--ghost"
+            href={githubRepo}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()} // så klick på länken inte öppnar popup igen
+          >
             GitHub Repo →
           </a>
         </div>

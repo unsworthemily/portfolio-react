@@ -1,39 +1,64 @@
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
+import ProjectPopup from "../components/ProjectPopup";
 import { projects } from "../data/projects";
 
-export default function Portfolio() {
-  const [showProjects, setShowProjects] = useState(false);
+export default function Portfolio({ searchQuery, setSearchQuery }) {
+  const [showProjects, setShowProjects] = useState(true);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const filteredProjects = projects.filter((project) => {
+    const query = (searchQuery || "").toLowerCase().trim();
+    if (!query) return true;
+
+    const matchesName = project.name.toLowerCase().includes(query);
+    const matchesTech = project.techUsed.some((tech) =>
+      tech.toLowerCase().includes(query)
+    );
+
+    return matchesName || matchesTech;
+  });
 
   return (
     <section className="container" id="projects">
-      <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 12,
+        }}
+      >
         <h1 style={{ margin: 0 }}>Projects</h1>
 
-        <button className="btn btn--ghost" onClick={() => setShowProjects((prev) => !prev)}>
+        <button
+          className="btn btn--ghost"
+          onClick={() => setShowProjects((prev) => !prev)}
+        >
           {showProjects ? "Hide projects" : "Preview projects"}
         </button>
       </div>
 
-      {/* Som default: tomt */}
       {showProjects && (
         <div style={{ marginTop: 22, display: "grid", gap: 28 }}>
-          {projects.map((p) => (
+          {filteredProjects.length === 0 && (
+            <p className="muted">No projects match your search.</p>
+          )}
+
+          {filteredProjects.map((project) => (
             <ProjectCard
-              key={p.name}
-              name={p.name}
-              screenshot={p.screenshot}
-              githubRepo={p.githubRepo}
-              techUsed={p.techUsed}
-              shortWriteUp={p.shortWriteUp}
-              whatItDoes={p.whatItDoes}
-              whatILearned={p.whatILearned}
-              role={p.role}
-              challengesSolved={p.challengesSolved}
+              key={project.name}
+              {...project}
+              onSelect={() => setSelectedProject(project)}
             />
           ))}
         </div>
       )}
+
+      <ProjectPopup
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </section>
   );
 }

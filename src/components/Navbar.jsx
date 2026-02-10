@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ query, setQuery }) {
   return (
     <header className="nav">
       <div className="container nav__inner">
@@ -12,6 +12,15 @@ export default function Navbar() {
           <Link to="/about">About</Link>
           <a href="#contact">Contact</a>
         </nav>
+
+        {/* Search */}
+        <input
+          className="nav__search"
+          type="text"
+          placeholder="Search projects..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
       </div>
     </header>
   );
