@@ -5,7 +5,9 @@ export default function Navbar({ query, setQuery }) {
   return (
     <header className="nav">
       <div className="container nav__inner">
-        <Link className="nav__brand" to="/">Portfolio</Link>
+        <Link className="nav__brand" to="/">
+          Portfolio
+        </Link>
 
         <nav className="nav__links">
           <Link to="/portfolio">Projects</Link>
@@ -13,7 +15,6 @@ export default function Navbar({ query, setQuery }) {
           <a href="#contact">Contact</a>
         </nav>
 
-        {/* Search */}
         <input
           className="nav__search"
           type="text"
