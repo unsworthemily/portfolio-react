@@ -6,15 +6,17 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="container hero__inner">
 
-        <div style={{ display: "flex", alignItems: "center", gap: "40px", flexWrap: "wrap" }}>
+        <div className="hero__layout">
 
           {/* TEXT */}
-          <div style={{ flex: 1 }}>
+          <div className="hero__content">
             <p className="kicker">
               React • JavaScript • Frontend • Learning by building
             </p>
 
-            <h1 className="hero__title">My Frontend Developer Portfolio</h1>
+            <h1 className="hero__title">
+              My Frontend Developer Portfolio
+            </h1>
 
             <p className="hero__lead">
               A collection of projects built during my frontend development studies.
@@ -22,8 +24,12 @@ export default function Hero() {
             </p>
 
             <div className="hero__actions">
-              <Link className="btn" to="/portfolio">View projects</Link>
-              <a className="btn btn--ghost" href="#contact">Contact</a>
+              <Link className="btn" to="/portfolio">
+                View projects
+              </Link>
+              <a className="btn btn--ghost" href="#contact">
+                Contact
+              </a>
             </div>
           </div>
 
@@ -31,13 +37,7 @@ export default function Hero() {
           <img
             src="/profile.png"
             alt="Emily"
-            style={{
-              width: "220px",
-              height: "220px",
-              objectFit: "cover",
-              borderRadius: "50%",
-              boxShadow: "0 20px 40px rgba(0,0,0,0.15)"
-            }}
+            className="hero__profile"
           />
 
         </div>
