@@ -24,7 +24,7 @@ a {
 
 /* Återanvändbar container */
 .container {
-  width: min(1100px, 100% - 40px);
+  width: min(1280px, 100% - 40px);
   margin: 0 auto;
 }
 

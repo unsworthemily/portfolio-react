@@ -88,7 +88,7 @@
 /* desktop layout */
 @media (min-width: 900px) {
   .card.project {
-    grid-template-columns: 1.05fr 1.45fr;
+    grid-template-columns: 1fr 1.8fr;
   }
 
   .project__media img {
