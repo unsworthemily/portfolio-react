@@ -6,29 +6,6 @@
   overflow: hidden;
 }
 
-/* glow blobs */
-.contact::before,
-.contact::after {
-  content: "";
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  border-radius: 50%;
-  filter: blur(55px);
-  opacity: 0.45;
-  pointer-events: none;
-}
-
-.contact::before {
-  left: -180px;
-  top: 120px;
-}
-
-.contact::after {
-  right: -200px;
-  top: 40px;
-}
-
 .contact__inner {
   position: relative;
   display: grid;
