@@ -22,13 +22,11 @@
 .contact::before {
   left: -180px;
   top: 120px;
-  background: radial-gradient(circle, #ffe38a 0%, transparent 60%);
 }
 
 .contact::after {
   right: -200px;
   top: 40px;
-  background: radial-gradient(circle, #d7c1ff 0%, transparent 60%);
 }
 
 .contact__inner {

@@ -15,8 +15,8 @@ export default function Contact() {
         <div className="contact__left">
           <h1 className="contact__title">Let’s Connect</h1>
           <p className="contact__text">
-            I enjoy connecting with people from all backgrounds. If you have ideas,
-            want to collaborate, or just want to chat, my inbox is always open!
+            I value connecting with people from diverse backgrounds. <br />
+            Whether you have an idea to share, a collaboration in mind,<br /> or simply want to start a conversation,<br /> I’d love to hear from you.
           </p>
 
           <div className="contact__socials">
