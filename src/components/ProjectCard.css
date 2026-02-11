@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  max-width: 760px;
 }
 
 .project__top {
@@ -88,12 +89,11 @@
 /* desktop layout */
 @media (min-width: 900px) {
   .card.project {
-    grid-template-columns: 1fr 1.8fr;
+    grid-template-columns: 1fr; /* stackar istället för två kolumner */
   }
 
   .project__media img {
-    height: 100%;
-    min-height: 320px;
+    height: 340px;
   }
 
   .project__grid {

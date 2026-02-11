@@ -13,7 +13,7 @@ export default function Navbar({ query, setQuery }) {
           <Link to="/portfolio">Projects</Link>
           <Link to="/about">About</Link>
           <Link to="/game">Game</Link>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </nav>
 
         <input
