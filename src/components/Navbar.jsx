@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar({ query, setQuery }) {
+  const location = useLocation();
+  const isPortfolioPage = location.pathname === "/portfolio";
+
   return (
     <header className="nav">
       <div className="container nav__inner">
@@ -16,13 +19,15 @@ export default function Navbar({ query, setQuery }) {
           <Link to="/contact">Contact</Link>
         </nav>
 
-        <input
-          className="nav__search"
-          type="text"
-          placeholder="Search projects..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
+        {isPortfolioPage && (
+          <input
+            className="nav__search"
+            type="text"
+            placeholder="Search projects..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        )}
       </div>
     </header>
   );
