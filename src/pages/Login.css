@@ -1,0 +1,13 @@
+.login__title {
+  color: #111;
+}
+.auth {
+  padding: 70px 0 90px;
+  background: #f6f7fb;
+}
+
+.auth__card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px;
+}

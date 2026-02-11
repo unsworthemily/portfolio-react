@@ -8,6 +8,8 @@ import Portfolio from "./pages/Portfolio";
 import "./App.css";
 import Game from "./pages/Game";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 
 
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="/portfolio" element={<Portfolio searchQuery={query} />} />
         <Route path="/game" element={<Game />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
 
       <Footer />
