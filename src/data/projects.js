@@ -24,7 +24,7 @@ export const projects = [
   {
     name: "Project Genesis",
     screenshot: "/project3.png",
-    githubRepo: "https://github.com/unsworthemily/Assignment-11-Genesis-design",
+    githubRepo: "https://github.com/unsworthemily/11-Genesis-design",
     techUsed: ["html", "css", "javascript"],
     shortWriteUp: "Project Genesis är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
     whatItDoes: "Sidan är en noggrann implementation av en färdig designmall där målet var att få layout, typografi och struktur att kännas så nära originalet som möjligt. Det är en responsiv webbsida med flera sektioner och enklare interaktivitet byggd med HTML, CSS och JavaScript.",
@@ -46,7 +46,7 @@ export const projects = [
   {
     name: "Project Genesis",
     screenshot: "/project3.png",
-    githubRepo: "https://github.com/unsworthemily/Assignment-11-Genesis-design",
+    githubRepo: "https://github.com/unsworthemily/11-Genesis-design",
     techUsed: ["html", "css", "javascript"],
     shortWriteUp: "Project Genesis är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
     whatItDoes: "Sidan är en noggrann implementation av en färdig designmall där målet var att få layout, typografi och struktur att kännas så nära originalet som möjligt. Det är en responsiv webbsida med flera sektioner och enklare interaktivitet byggd med HTML, CSS och JavaScript.",
@@ -55,7 +55,7 @@ export const projects = [
     challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
   }
   {
-    name: "Project Genesis",
+    name: "Project Forms-Frog",
     screenshot: "/project3.png",
     githubRepo: "https://github.com/unsworthemily/7-Forms-Frog",
     techUsed: ["html", "css", "javascript"],
