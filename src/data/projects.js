@@ -31,7 +31,7 @@ export const projects = [
     whatILearned: "Jag insåg hur mycket små detaljer faktiskt betyder. Marginaler, spacing, typsnitt och proportioner gör större skillnad än man tror. Jag lärde mig också hur viktigt det är att strukturera sin kod på ett sätt som gör den lätt att förstå, justera och bygga vidare på.",
     role: "Jag gjorde projektet själv.",
     challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
-  }
+  },
   {
     name: "Project CSS Animation",
     screenshot: "/project3.png",
@@ -42,7 +42,7 @@ export const projects = [
     whatILearned: "Jag insåg hur mycket små detaljer faktiskt betyder. Marginaler, spacing, typsnitt och proportioner gör större skillnad än man tror. Jag lärde mig också hur viktigt det är att strukturera sin kod på ett sätt som gör den lätt att förstå, justera och bygga vidare på.",
     role: "Jag gjorde projektet själv.",
     challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
-  }
+  },
   {
     name: "Project Genesis",
     screenshot: "/project3.png",
@@ -53,7 +53,7 @@ export const projects = [
     whatILearned: "Jag insåg hur mycket små detaljer faktiskt betyder. Marginaler, spacing, typsnitt och proportioner gör större skillnad än man tror. Jag lärde mig också hur viktigt det är att strukturera sin kod på ett sätt som gör den lätt att förstå, justera och bygga vidare på.",
     role: "Jag gjorde projektet själv.",
     challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
-  }
+  },
   {
     name: "Project Forms-Frog",
     screenshot: "/project3.png",
