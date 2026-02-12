@@ -1,13 +1,72 @@
-.login__title {
-  color: #111;
-}
-.auth {
+.login {
   padding: 70px 0 90px;
   background: #f6f7fb;
 }
 
-.auth__card {
+.login__inner {
+  display: grid;
+  place-items: center;
+}
+
+.login__card {
+  width: min(520px, 100%);
   background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.10);
   border-radius: 18px;
   padding: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.login__title {
+  margin: 0 0 8px;
+  font-size: 34px;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+
+.login__text {
+  margin: 0 0 18px;
+  color: rgba(16, 17, 20, 0.75);
+  line-height: 1.6;
+}
+
+.login__error {
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.18);
+  color: rgba(220, 38, 38, 0.95);
+  font-size: 14px;
+}
+
+.login__form {
+  display: grid;
+  gap: 12px;
+}
+
+.login__form input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  padding: 12px 14px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+
+.login__form input:focus {
+  border-color: rgba(17, 17, 17, 0.35);
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.06);
+}
+
+.login__footer {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: rgba(16, 17, 20, 0.75);
+}
+
+.login__footer a {
+  font-weight: 600;
+  text-decoration: underline;
 }

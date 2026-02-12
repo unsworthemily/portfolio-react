@@ -1,13 +1,72 @@
-.auth {
+.register {
   padding: 70px 0 90px;
   background: #f6f7fb;
 }
 
-.auth__card {
+.register__inner {
+  display: grid;
+  place-items: center;
+}
+
+.register__card {
+  width: min(520px, 100%);
   background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.10);
   border-radius: 18px;
   padding: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
 }
+
 .register__title {
+  margin: 0 0 8px;
+  font-size: 34px;
+  letter-spacing: -0.5px;
   color: #111;
+}
+
+.register__text {
+  margin: 0 0 18px;
+  color: rgba(16, 17, 20, 0.75);
+  line-height: 1.6;
+}
+
+.register__error {
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.18);
+  color: rgba(220, 38, 38, 0.95);
+  font-size: 14px;
+}
+
+.register__form {
+  display: grid;
+  gap: 12px;
+}
+
+.register__form input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  padding: 12px 14px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+
+.register__form input:focus {
+  border-color: rgba(17, 17, 17, 0.35);
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.06);
+}
+
+.register__footer {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: rgba(16, 17, 20, 0.75);
+}
+
+.register__footer a {
+  font-weight: 600;
+  text-decoration: underline;
 }

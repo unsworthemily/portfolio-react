@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 
-
 export default function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -24,18 +23,16 @@ export default function Login() {
   }
 
   return (
-    <section className="auth">
-      <div className="container auth__inner">
-        <div className="auth__card">
-          <h1 className="auth__title">Log in</h1>
-          <p className="auth__text">Enter your credentials to access the game.</p>
+    <section className="login">
+      <div className="container login__inner">
+        <div className="login__card">
+          <h1 className="login__title">Log in</h1>
+          <p className="login__text">Enter your credentials to access the game.</p>
 
-          {error && <p className="auth__error">{error}</p>}
+          {error && <p className="login__error">{error}</p>}
 
-          <form className="auth__form" onSubmit={handleSubmit}>
-            <label className="sr-only" htmlFor="username">Username</label>
+          <form className="login__form" onSubmit={handleSubmit}>
             <input
-              id="username"
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -43,9 +40,7 @@ export default function Login() {
               required
             />
 
-            <label className="sr-only" htmlFor="password">Password</label>
             <input
-              id="password"
               type="password"
               placeholder="Password"
               value={password}
@@ -57,7 +52,7 @@ export default function Login() {
             <button className="btn" type="submit">Log in</button>
           </form>
 
-          <p className="auth__footer">
+          <p className="login__footer">
             No account yet? <Link to="/register">Create one</Link>
           </p>
         </div>
