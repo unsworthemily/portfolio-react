@@ -32,4 +32,37 @@ export const projects = [
     role: "Jag gjorde projektet själv.",
     challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
   }
+  {
+    name: "Project CSS Animation",
+    screenshot: "/project3.png",
+    githubRepo: "https://github.com/unsworthemily/8-css-animation-halloween-ska-nes-djurpark",
+    techUsed: ["html", "css", "javascript"],
+    shortWriteUp: "Project CSS Animation är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
+    whatItDoes: "Sidan är en noggrann implementation av en färdig designmall där målet var att få layout, typografi och struktur att kännas så nära originalet som möjligt. Det är en responsiv webbsida med flera sektioner och enklare interaktivitet byggd med HTML, CSS och JavaScript.",
+    whatILearned: "Jag insåg hur mycket små detaljer faktiskt betyder. Marginaler, spacing, typsnitt och proportioner gör större skillnad än man tror. Jag lärde mig också hur viktigt det är att strukturera sin kod på ett sätt som gör den lätt att förstå, justera och bygga vidare på.",
+    role: "Jag gjorde projektet själv.",
+    challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
+  }
+  {
+    name: "Project Genesis",
+    screenshot: "/project3.png",
+    githubRepo: "https://github.com/unsworthemily/Assignment-11-Genesis-design",
+    techUsed: ["html", "css", "javascript"],
+    shortWriteUp: "Project Genesis är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
+    whatItDoes: "Sidan är en noggrann implementation av en färdig designmall där målet var att få layout, typografi och struktur att kännas så nära originalet som möjligt. Det är en responsiv webbsida med flera sektioner och enklare interaktivitet byggd med HTML, CSS och JavaScript.",
+    whatILearned: "Jag insåg hur mycket små detaljer faktiskt betyder. Marginaler, spacing, typsnitt och proportioner gör större skillnad än man tror. Jag lärde mig också hur viktigt det är att strukturera sin kod på ett sätt som gör den lätt att förstå, justera och bygga vidare på.",
+    role: "Jag gjorde projektet själv.",
+    challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
+  }
+  {
+    name: "Project Genesis",
+    screenshot: "/project3.png",
+    githubRepo: "https://github.com/unsworthemily/7-Forms-Frog",
+    techUsed: ["html", "css", "javascript"],
+    shortWriteUp: "Project forms-frog är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
+    whatItDoes: "Sidan är en noggrann implementation av en färdig designmall där målet var att få layout, typografi och struktur att kännas så nära originalet som möjligt. Det är en responsiv webbsida med flera sektioner och enklare interaktivitet byggd med HTML, CSS och JavaScript.",
+    whatILearned: "Jag insåg hur mycket små detaljer faktiskt betyder. Marginaler, spacing, typsnitt och proportioner gör större skillnad än man tror. Jag lärde mig också hur viktigt det är att strukturera sin kod på ett sätt som gör den lätt att förstå, justera och bygga vidare på.",
+    role: "Jag gjorde projektet själv.",
+    challengesSolved: "Att få alla delar att linjera perfekt, bete sig snyggt i olika skärmstorlekar och samtidigt hålla koden ren och strukturerad var en riktig utmaning som jag lärde mig mycket av."
+  }
 ];
