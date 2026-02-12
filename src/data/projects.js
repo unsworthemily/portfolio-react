@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     name: "Project CSS Animation",
-    screenshot: "/project3.png",
+    screenshot: "/project4.png",
     githubRepo: "https://github.com/unsworthemily/8-css-animation-halloween-ska-nes-djurpark",
     techUsed: ["html", "css", "javascript"],
     shortWriteUp: "Project CSS Animation är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
@@ -45,7 +45,7 @@ export const projects = [
   },
   {
     name: "Project Genesis",
-    screenshot: "/project3.png",
+    screenshot: "/project5.png",
     githubRepo: "https://github.com/unsworthemily/11-Genesis-design",
     techUsed: ["html", "css", "javascript"],
     shortWriteUp: "Project Genesis är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
@@ -56,7 +56,7 @@ export const projects = [
   },
   {
     name: "Project Forms-Frog",
-    screenshot: "/project3.png",
+    screenshot: "/project6.png",
     githubRepo: "https://github.com/unsworthemily/7-Forms-Frog",
     techUsed: ["html", "css", "javascript"],
     shortWriteUp: "Project forms-frog är ett projekt där jag verkligen fick öva på att översätta en design till verklig kod – med fokus på detaljer, känsla och noggrannhet snarare än bara funktion.",
