@@ -52,15 +52,15 @@ export default function ProjectCard({
             <p>{whatItDoes}</p>
           </div>
           <div>
-            <h4>What you learned</h4>
+            <h4>What I learned</h4>
             <p>{whatILearned}</p>
           </div>
           <div>
-            <h4>Your role</h4>
+            <h4>My role</h4>
             <p>{role}</p>
           </div>
           <div>
-            <h4>Challenges you solved</h4>
+            <h4>Challenges I solved</h4>
             <p>{challengesSolved}</p>
           </div>
         </div>
