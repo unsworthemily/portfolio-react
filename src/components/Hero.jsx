@@ -27,9 +27,12 @@ export default function Hero() {
               <Link className="btn" to="/portfolio">
                 View projects
               </Link>
-              <a className="btn btn--ghost" href="#contact">
-                Contact
-              </a>
+              <Link className="btn btn--ghost" to="/contact">
+              Contact
+              </Link>
+            </div>
+            <div className="hero__signature">
+              <span className="name-signature">Emily Unsworth</span>
             </div>
           </div>
 

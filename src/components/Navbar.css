@@ -91,3 +91,13 @@
     max-width: 100%;
   }
 }
+
+/* Active page indicator */
+.nav__links a.active {
+  color: #111;
+  font-weight: 600;
+}
+
+.nav__links a.active::after {
+  width: 100%;
+}

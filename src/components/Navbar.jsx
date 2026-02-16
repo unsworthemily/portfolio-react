@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar({ query, setQuery }) {
@@ -8,26 +8,40 @@ export default function Navbar({ query, setQuery }) {
   return (
     <header className="nav">
       <div className="container nav__inner">
-        <Link className="nav__brand" to="/">
+        <NavLink className="nav__brand" to="/">
           Portfolio
-        </Link>
+        </NavLink>
 
         <nav className="nav__links">
-          <Link to="/portfolio">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/game">Game</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
 
-        {isPortfolioPage && (
-          <input
-            className="nav__search"
-            type="text"
-            placeholder="Search projects..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-        )}
+          <NavLink to="/about" className={({isActive}) => isActive ? "active" : ""}>
+            About
+          </NavLink>
+
+          <NavLink to="/portfolio" className={({isActive}) => isActive ? "active" : ""}>
+            Projects
+          </NavLink>
+
+          {/* 🔎 SEARCH RIGHT AFTER PROJECTS */}
+          {isPortfolioPage && (
+            <input
+              className="nav__search"
+              type="text"
+              placeholder="Search..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+          )}
+
+          <NavLink to="/game" className={({isActive}) => isActive ? "active" : ""}>
+            Game
+          </NavLink>
+
+          <NavLink to="/contact" className={({isActive}) => isActive ? "active" : ""}>
+            Contact
+          </NavLink>
+
+        </nav>
       </div>
     </header>
   );
