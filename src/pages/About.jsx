@@ -36,3 +36,31 @@ export default function About() {
     </section>
   );
 }
+<div className="about__facts">
+
+  <div>
+    <span>Professional focus</span>
+    <p>Frontend development & user experience</p>
+  </div>
+
+  <div>
+    <span>Currently</span>
+    <p>Studying frontend development and building practical projects in React and JavaScript</p>
+  </div>
+
+  <div>
+    <span>Strengths</span>
+    <p>Structure, long-term thinking, problem solving and consistency</p>
+  </div>
+
+  <div>
+    <span>Interests</span>
+    <p>Training, technology and continuous learning</p>
+  </div>
+
+  <div>
+    <span>Goal</span>
+    <p>To create intuitive and well-structured applications</p>
+  </div>
+
+</div>

@@ -54,3 +54,25 @@
   margin-bottom: 22px;
   max-width: 65ch;
 }
+.about__facts {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+  display: grid;
+  gap: 14px;
+}
+
+.about__facts span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+.about__facts p {
+  margin: 2px 0 0;
+  color: rgba(16, 17, 20, 0.75);
+  font-size: 14px;
+}
