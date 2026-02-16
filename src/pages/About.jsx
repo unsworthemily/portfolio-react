@@ -31,36 +31,33 @@ export default function About() {
             thinking with strategic vision.
           </p>
 
+          {/* FACT BOX */}
+          <div className="about__facts">
+
+            <div>
+              <span>What drives me</span>
+              <p>Learning new things and turning ideas into practical solutions</p>
+            </div>
+
+            <div>
+              <span>How I work</span>
+              <p>Structured, calm and consistent — step by step</p>
+            </div>
+
+            <div>
+              <span>What I enjoy</span>
+              <p>Building clear interfaces and improving usability</p>
+            </div>
+
+            <div>
+              <span>Outside coding</span>
+              <p>Training, family life and continuous personal development</p>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>
   );
 }
-<div className="about__facts">
-
-  <div>
-    <span>Professional focus</span>
-    <p>Frontend development & user experience</p>
-  </div>
-
-  <div>
-    <span>Currently</span>
-    <p>Studying frontend development and building practical projects in React and JavaScript</p>
-  </div>
-
-  <div>
-    <span>Strengths</span>
-    <p>Structure, long-term thinking, problem solving and consistency</p>
-  </div>
-
-  <div>
-    <span>Interests</span>
-    <p>Training, technology and continuous learning</p>
-  </div>
-
-  <div>
-    <span>Goal</span>
-    <p>To create intuitive and well-structured applications</p>
-  </div>
-
-</div>
