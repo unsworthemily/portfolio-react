@@ -10,6 +10,10 @@ export default function Hero() {
 
           {/* TEXT */}
           <div className="hero__content">
+            <div className="hero__signature">
+              <span className="name-signature">Emily Unsworth</span>
+            </div>
+            
             <p className="kicker">
               React • JavaScript • Frontend • Learning by building
             </p>
@@ -31,9 +35,7 @@ export default function Hero() {
               Contact
               </Link>
             </div>
-            <div className="hero__signature">
-              <span className="name-signature">Emily Unsworth</span>
-            </div>
+            
           </div>
 
           {/* IMAGE */}
